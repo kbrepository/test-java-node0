@@ -6,7 +6,7 @@ pipeline {
             steps {
                 checkout([$class: 'GitSCM',
                     branches: [[name: '*/main']],
-                    userRemoteConfigs: [[url: 'git@github.com:kbrepository/test-java-node0.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/kbrepository/test-java-node0.git']]
                 ])
             }
         }
