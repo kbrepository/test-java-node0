@@ -39,7 +39,7 @@ pipeline {
 					sh 'mvn snyk:test -fn'
 				}
 			}
-    }
+        }
 
     post {
         always {
