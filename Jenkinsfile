@@ -40,12 +40,11 @@ pipeline {
 				}
 			}
         }
-
-        post {
-            always {
-                junit '**/target/surefire-reports/*.xml' // Publish test results
-                cleanWs() // Clean workspace after build
-            }
+    }
+    post {
+        always {
+            junit '**/target/surefire-reports/*.xml' // Publish test results
+            cleanWs() // Clean workspace after build
         }
-}
+    }
 }
