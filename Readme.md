@@ -1,1 +1,1 @@
-This is a test application.
+This branch is for testing SNYK functionalities.
